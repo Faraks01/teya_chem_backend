@@ -9,4 +9,5 @@ if [ -n "${PID}" ]; then
 fi
 
 # Run server at background
+echo "Starting server on 0.0.0.0:8000"
 DEBUG=False nohup python3 manage.py runserver 0.0.0.0:8000 > /dev/null 2>&1&
