@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-8su=41##&g8ler_en8$p#$pl6jelc3!!m3!x3m#r@p2g4v7$)e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DATABASE_URL', True)
 
-ALLOWED_HOSTS = ['teya-chem.ru', 'www.teya-chem.ru', '95.163.229.7', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
