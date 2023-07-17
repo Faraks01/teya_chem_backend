@@ -1,7 +1,12 @@
 #!/bin/bash
 
 # Stopping running server instance if exists
-kill -9 $(lsof -t -i:8000)
+PID=$(lsof -t -i:8000)
+
+if [ -n "${PID}" ]; then
+    echo "Stopping instance at pid: $PID"
+    sudo kill -9 $PID
+fi
 
 # Run server at background
-nohup DEBUG=False python3 manage.py runserver 0.0.0.0:8000 > /dev/null 2>&1&
+DEBUG=False nohup python3 manage.py runserver 0.0.0.0:8000 > /dev/null 2>&1&
