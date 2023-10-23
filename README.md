@@ -4,6 +4,7 @@ Django backend application for [Teya Chem](https://github.com/Faraks01/teya-chem
 
 ## General
 The application built to serve frontend [application](https://github.com/Faraks01/teya-chem) and had purposed to be hosted on nginx server.
+It's highly recommended to run server at background using [run_prod.sh script](run_prod.sh)
 
 ### Python
 Make sure that Python3 is installed.
